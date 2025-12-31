@@ -30,8 +30,19 @@
 
 # THIS IS ONLY INTENDED FOR DEVELOPMENT USAGE
 
-FROM node:10
-RUN npm install -g nodemon
-WORKDIR /usr/src/osjs
-COPY entrypoint.sh .
-CMD ./entrypoint.sh
+FROM node:18-bullseye
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+ENV NODE_OPTIONS=--openssl-legacy-provider
+RUN npm run build
+
+EXPOSE 8000
+
+CMD ["npm", "run", "serve"]
+
+
