@@ -39,7 +39,7 @@ RUN npm install
 
 COPY . .
 ENV NODE_OPTIONS=--openssl-legacy-provider
-RUN npm run build
+RUN npm run package:discover && npm run build
 
 EXPOSE 8000
 
