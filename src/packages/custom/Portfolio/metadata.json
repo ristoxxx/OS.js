@@ -1,0 +1,7 @@
+{
+  "name": "Portfolio",
+  "icon": "applications-internet",
+  "category": "Portfolio",
+  "desktop": true,
+  "singleton": true
+}

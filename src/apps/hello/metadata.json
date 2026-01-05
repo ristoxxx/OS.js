@@ -1,0 +1,7 @@
+{
+  "name": "Hello",
+  "icon": "applications-other",
+  "category": "System",
+  "desktop": true,
+  "singleton": true
+}
