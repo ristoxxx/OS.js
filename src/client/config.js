@@ -40,5 +40,11 @@ export default {
       username: 'demo',
       password: 'demo'
     }
+  },
+  desktop: {
+  background: {
+    src: '/.desktop/kuva.jpg',
+    style: 'cover'
+    }
   }
 };
