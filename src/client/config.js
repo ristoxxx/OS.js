@@ -34,6 +34,7 @@
 // Complete config tree: https://github.com/os-js/osjs-client/blob/master/src/config.js
 //
 
+import wallpaper from './kuva.jpg';
 export default {
   auth: {
     login: {
@@ -42,9 +43,11 @@ export default {
     }
   },
   desktop: {
-  background: {
-    src: '/.desktop/kuva.jpg',
-    style: 'cover'
-    }
+    background: {
+        src: wallpaper,
+        color: '#000',
+        style: 'cover'
+      }
+  
   }
 };

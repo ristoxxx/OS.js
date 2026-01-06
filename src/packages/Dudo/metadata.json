@@ -1,0 +1,18 @@
+{
+  "type": "application",
+  "name": "Dudo",
+  "category": null,
+  "autostart": true,
+  "server": "server.js",
+  "icon": "icon.png",
+  "title": {
+    "en_EN": "Dudo"
+  },
+  "description": {
+    "en_EN": "Dudo"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}
